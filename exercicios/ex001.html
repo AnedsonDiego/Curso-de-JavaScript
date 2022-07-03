@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #n1{
+            background-color: aqua;
+            color: black;
+            width: 13vw;
+            height: 20vh;
+        }
+
+        #n1 > h1{
+            text-align: center;
+            padding-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="n1">
+
+        <h1>Ola Boa Noite</h1>
+        
+    </section>
+    
+
+    <script>
+        var n1 = window.document.getElementById('n1')
+        n1.addEventListener('click', clicar)
+
+        function clicar() {
+            n1.style.backgroundColor = 'red'
+            n1.innerText = 'Tchau'
+            
+        }
+
+    </script>
+</body>
+</html>

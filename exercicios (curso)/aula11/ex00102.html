@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>            
+
+    <input type="text" id="txt">
+    <button id="btn">Verificar</button>
+
+    <span id="res"></span>
+
+    <script>
+        const n1 = document.getElementById("btn");
+        const n2 = document.getElementById("txt");
+        const n3 = document.getElementById("res");
+         
+        n1.addEventListener("click" ,function(){
+            if(n2.value == "brasil"){
+                n3.textContent = 'brasileiro';
+            }
+            else{
+                n3.textContent = 'estrangeiro'
+            }
+        })
+    </script>
+</body>
+</html>
