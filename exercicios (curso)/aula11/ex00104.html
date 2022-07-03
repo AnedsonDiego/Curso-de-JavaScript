@@ -7,6 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Nacionalidade</h1>
+
+    pais <input type="text" name="txt" id="txt">
+    <input type="button" value="verificar" id="ver">
+
+    <span id="res"></span>
+
+    <script>
+        const n1 = document.getElementById("txt");
+        const n2 = document.getElementById("ver");
+        const n3 = document.getElementById("res");
+
+        n2.addEventListener("click", function(){
+            if(n1.value == "japao"){
+                n3.textContent = "japones";
+            }
+
+            else{
+                n3.textContent = "estrangeiro"
+            }
+        })
+    </script>
 </body>
 </html>
