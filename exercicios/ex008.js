@@ -1,9 +1,9 @@
 var agora = new Date()
-var sem = agora.getDay()
+var dias = agora.getDay()
 
+console.log(dias)
 
-
-switch(sem){
+switch(dias){
     case 0 :
     console.log('domingo');
     break
@@ -38,4 +38,3 @@ switch(sem){
 
    
 }
-
