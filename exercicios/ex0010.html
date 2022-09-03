@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seu Pais</h1>
+
+    <input type="text" name="n1" id="n1">
+    <input type="button" value="aqui" id="n2">
+    <span id="n3">Voce mora</span>
+
+    <script>
+        const n1 = document.getElementById("n1")
+        const n2 = document.getElementById("n2")
+        const n3 = document.getElementById("n3")
+
+        n2.addEventListener("click" ,function(){
+            if(n1.value == "brasil"){
+               n3.textContent='brasileiro'
+            }
+            else{
+                n3.textContent='estrangeiro'
+            }
+        })
+    </script>
+</body>
+</html>

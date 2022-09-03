@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+    <style>
+        #td{
+            width: 400px;
+            height: 350px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="td" onmouseover="mo()">Boa Tarde</div>
+
+    <script>
+        
+        var n1 = document.getElementById('td')
+
+       function mo(){
+        n1.innerHTML='Boa Noite'
+        n1.style.backgroundColor = 'red'
+       }
+
+       n1.addEventListener("click", function(){
+        n1.style.backgroundColor='yellow'
+        n1.style.color='black'
+       })
+
+
+    </script>
+</body>
+</html>
