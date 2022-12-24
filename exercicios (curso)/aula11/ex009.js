@@ -8,4 +8,4 @@ if(pais == 'brasil'){
     console.log('Sou Estrangeiro')
 }
 
-//Condicao Composta
+//Condicao Composta quando houver um if e else

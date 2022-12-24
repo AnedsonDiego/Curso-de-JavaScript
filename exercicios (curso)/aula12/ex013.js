@@ -11,5 +11,3 @@ if(hora < 12){
     console.log('boa noite')
 }
 }
-
-
